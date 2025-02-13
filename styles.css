@@ -191,7 +191,7 @@ p {
 .repo-item {
     text-decoration: none;
     color: #fff;
-    background-color: rgba(102, 102, 102, 0.8); /* Black container */
+    background-color: rgba(44, 44, 44, 0.8); /* Black container */
     padding: 15px;
     border-radius: 10px;
     transition: transform 0.3s ease, background-color 0.3s ease;
@@ -248,7 +248,7 @@ p {
 .project-item {
     width: 100%;
     max-width: 300px; /* Smaller container width */
-    background-color: rgba(102, 102, 102, 0.8); /* Dark background for the container */
+    background-color: rgba(44, 44, 44, 0.8); /* Dark background for the container */
     border-radius: 10px;
     padding: 10px; /* Reduced padding */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
@@ -321,7 +321,7 @@ p {
 #feedback .project-item {
     width: 100%;
     max-width: 400px; /* Adjust width as needed */
-    background-color: rgba(102, 102, 102, 0.8); /* Dark background */
+    background-color: rgba(44, 44, 44, 0.8); /* Dark background */
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
@@ -719,10 +719,10 @@ p {
 
 /* Discord Container */
 .discord-container {
-    background-color: rgba(102, 102, 102, 0.8); /* Semi-transparent black background */
+    background-color: rgba(44, 44, 44, 0.8); /* Semi-transparent black background */
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid rgba(102, 102, 102, 0.8); /* Light border */
+    border: 1px solid rgba(44, 44, 44, 0.8); /* Light border */
     margin-top: 20px;
     max-width: 400px; /* Adjust width as needed */
     margin-left: auto;
