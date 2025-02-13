@@ -1,16 +1,17 @@
-// Vanta.js Waves background initialization
-VANTA.WAVES({
-    el: "#vanta-background", // Make sure this matches the ID of your background container
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: false,
-    minHeight: 200.00,
-    minWidth: 200.00,
-    scale: 1.00,
-    scaleMobile: 1.00,
-    color: 0x555555 // Dark gray color for the waves
+document.addEventListener('DOMContentLoaded', () => {
+    VANTA.TRUNK({
+        el: "#vanta-background", // Make sure this matches the ID of your background container
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x393939, // Dark gray color for the trunk effect
+        backgroundColor: 0x0 // Black background color
+    });
 });
-
 let currentSection = '#home';
 
 // Function to slide to a specific section
