@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deki's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <!-- Vanta.js Waves -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.waves.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="vanta-background"></div>
+    
+    <!-- Home Section -->
+    <div class="content" id="home">
+        <h1>Welcome</h1>
+        <h2>I'm Deki</h2>
+        <p>Hello! I’m Deki, an 18-year-old hobbyist programmer.</p>
+        <div class="social-icons">
+            <a href="https://github.com/Deekii" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://steamcommunity.com/id/deki1312/" target="_blank" aria-label="Steam">
+                <i class="fab fa-steam"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="section" id="skills">
+        <h2>Skills</h2>
+        <div class="languages-container">
+            <div class="language-item">
+                <i class="fab fa-python"></i>
+                <span>Python</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%; background-color: #3776AB;"></div>
+                </div>
+            </div>
+            <div class="language-item">
+                <i class="fab fa-js"></i>
+                <span>JavaScript</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%; background-color: #F7DF1E;"></div>
+                </div>
+            </div>
+            <div class="language-item">
+                <i class="fab fa-html5"></i>
+                <span>HTML</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%; background-color: #E44D26;"></div>
+                </div>
+            </div>
+            <div class="language-item">
+                <i class="fab fa-css3"></i>
+                <span>CSS</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%; background-color: #264DE4;"></div>
+                </div>
+            </div>
+            <div class="language-item">
+                <i class="fas fa-code"></i>
+                <span>Lua</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%; background-color: #000080;"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="repositories">
+            <h2>Repositories</h2>
+            <div class="repo-container">
+                <a href="https://github.com/Deekii/Simple-discord-bot" target="_blank" class="repo-item">
+                    <div class="repo-left">
+                        <span class="repo-public">Public</span>
+                        <span class="repo-language">Python</span>
+                    </div>
+                    <h3 class="repo-name">Simple-discord-bot</h3>
+                </a>
+                <a href="https://github.com/Deekii/Notify-Bot" target="_blank" class="repo-item">
+                    <div class="repo-left">
+                        <span class="repo-public">Public</span>
+                        <span class="repo-language">Python</span>
+                    </div>
+                    <h3 class="repo-name">Notify-Bot</h3>
+                </a>
+                <!-- New Repository -->
+                <a href="https://github.com/Deekii/Social-Links-Website" target="_blank" class="repo-item">
+                    <div class="repo-left">
+                        <span class="repo-public">Public</span>
+                        <span class="repo-language" style="background-color: #800080;">CSS</span> <!-- Purple color for CSS -->
+                    </div>
+                    <h3 class="repo-name">Social-Links-Website</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="section" id="projects">
+        <h2>Projects</h2>
+        
+        <!-- Websites Subtitle -->
+        <h3 class="subtitle">Websites</h3>
+        <div class="projects-container">
+            <div class="project-item">
+                <div class="project-header">
+                    <!-- Circular Image -->
+                    <img src="ikona.png" alt="Website Icon" class="circle-image">
+                    <!-- Website Name -->
+                    <h3 class="project-name">foxaralinks.com</h3>
+                    <!-- Icons -->
+                    <div class="project-icons">
+                        <a href="https://foxaralinks.github.io/links/" target="_blank" aria-label="Visit Website">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a onclick="toggleImage()" aria-label="View Image">
+                            <i class="fas fa-image"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-image-container">
+                    <img src="website1.jpg" alt="Website Image" class="project-image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feedback Section -->
+    <div class="section" id="feedback">
+        <h2>Feedback</h2>
+        <h3 class="subtitle">Reviews</h3> <!-- Subtitle for Reviews -->
+        <div class="projects-container"> <!-- Reuse the same container style -->
+            <!-- Single Feedback Example -->
+            <div class="project-item">
+                <div class="project-header">
+                    <!-- Circular Image (Logo) -->
+                    <img src="ikona.png" alt="User Icon" class="circle-image">
+                    <!-- User Name and Website -->
+                    <div class="user-info">
+                        <h3 class="project-name">Foxara</h3>
+                        <p class="website">foxaralinks.com</p>
+                    </div>
+                    <!-- Five Stars -->
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <!-- Feedback Text -->
+                <p>"Really talented guy when it comes to web development. He knows what he is doing."</p>
+            </div>
+        </div>
+    </div>
+
+<!-- Contact Section -->
+<div class="section" id="contact">
+    <h2>Contact</h2>
+    <ul>
+        <li><strong>Email : </strong> dejanmikluc43@gmail.com</li>
+    </ul>
+
+    <!-- Discord Info Container -->
+    <div class="discord-container">
+        <p>Discord</p>
+        <div class="discord-profile">
+            <div class="avatar-container">
+                <img id="discord-avatar" src="" alt="Discord Avatar" class="circle-image">
+                <div id="status-indicator" class="status-indicator status-online"></div>
+            </div>
+            <div class="discord-details">
+                <h4 id="discord-username">Loading...</h4>
+                <div id="activity-container" class="activity-container">
+                    <span class="activity-icon"></span>
+                    <span class="activity-text">Loading activity...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Left-side menu -->
+    <div class="menu">
+        <a href="#home" class="menu-item">
+            <span>Home</span>
+        </a>
+        <a href="#skills" class="menu-item">
+            <span>Skills</span>
+        </a>
+        <a href="#projects" class="menu-item">
+            <span>Projects</span>
+        </a>
+        <a href="#feedback" class="menu-item">
+            <span>Feedback</span>
+        </a>
+        <a href="#contact" class="menu-item">
+            <span>Contact</span>
+        </a>
+    </div>
+    
+<!-- Hamburger Icon -->
+<div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+    <i class="fas fa-bars"></i>
+</div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+    <!-- Close Button -->
+    <div class="close-menu-icon" onclick="toggleMobileMenu()">
+        <i class="fas fa-times"></i>
+    </div>
+
+    <!-- Menu Items -->
+    <div class="mobile-menu-items">
+        <a href="#home" class="mobile-menu-item" onclick="toggleMobileMenu()">Home</a>
+        <a href="#skills" class="mobile-menu-item" onclick="toggleMobileMenu()">Skills</a>
+        <a href="#projects" class="mobile-menu-item" onclick="toggleMobileMenu()">Projects</a>
+        <a href="#feedback" class="mobile-menu-item" onclick="toggleMobileMenu()">Feedback</a>
+        <a href="#contact" class="mobile-menu-item" onclick="toggleMobileMenu()">Contact</a>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer>
+    <p>© Copyright Deki. All Rights Reserved - deki.lua</p>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
