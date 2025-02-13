@@ -6,15 +6,14 @@
     <title>Deki's Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <!-- Three.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <!-- Vanta.js Waves -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.waves.min.js"></script>
+    <!-- Load p5.js and vanta.trunk.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.trunk.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div id="vanta-background"></div>
-    
+
     <!-- Home Section -->
     <div class="content" id="home">
         <h1>Welcome</h1>
@@ -160,31 +159,32 @@
         </div>
     </div>
 
-<!-- Contact Section -->
-<div class="section" id="contact">
-    <h2>Contact</h2>
-    <ul>
-        <li><strong>Email : </strong> dejanmikluc43@gmail.com</li>
-    </ul>
+    <!-- Contact Section -->
+    <div class="section" id="contact">
+        <h2>Contact</h2>
+        <ul>
+            <li><strong>Email : </strong> dejanmikluc43@gmail.com</li>
+        </ul>
 
-    <!-- Discord Info Container -->
-    <div class="discord-container">
-        <p>Discord</p>
-        <div class="discord-profile">
-            <div class="avatar-container">
-                <img id="discord-avatar" src="" alt="Discord Avatar" class="circle-image">
-                <div id="status-indicator" class="status-indicator status-online"></div>
-            </div>
-            <div class="discord-details">
-                <h4 id="discord-username">Loading...</h4>
-                <div id="activity-container" class="activity-container">
-                    <span class="activity-icon"></span>
-                    <span class="activity-text">Loading activity...</span>
+        <!-- Discord Info Container -->
+        <div class="discord-container">
+            <p>Discord</p>
+            <div class="discord-profile">
+                <div class="avatar-container">
+                    <img id="discord-avatar" src="" alt="Discord Avatar" class="circle-image">
+                    <div id="status-indicator" class="status-indicator status-online"></div>
+                </div>
+                <div class="discord-details">
+                    <h4 id="discord-username">Loading...</h4>
+                    <div id="activity-container" class="activity-container">
+                        <span class="activity-icon"></span>
+                        <span class="activity-text">Loading activity...</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+
     <!-- Left-side menu -->
     <div class="menu">
         <a href="#home" class="menu-item">
@@ -204,32 +204,32 @@
         </a>
     </div>
     
-<!-- Hamburger Icon -->
-<div class="mobile-menu-icon" onclick="toggleMobileMenu()">
-    <i class="fas fa-bars"></i>
-</div>
-
-<!-- Mobile Menu -->
-<div class="mobile-menu">
-    <!-- Close Button -->
-    <div class="close-menu-icon" onclick="toggleMobileMenu()">
-        <i class="fas fa-times"></i>
+    <!-- Hamburger Icon -->
+    <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+        <i class="fas fa-bars"></i>
     </div>
 
-    <!-- Menu Items -->
-    <div class="mobile-menu-items">
-        <a href="#home" class="mobile-menu-item" onclick="toggleMobileMenu()">Home</a>
-        <a href="#skills" class="mobile-menu-item" onclick="toggleMobileMenu()">Skills</a>
-        <a href="#projects" class="mobile-menu-item" onclick="toggleMobileMenu()">Projects</a>
-        <a href="#feedback" class="mobile-menu-item" onclick="toggleMobileMenu()">Feedback</a>
-        <a href="#contact" class="mobile-menu-item" onclick="toggleMobileMenu()">Contact</a>
-    </div>
-</div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <!-- Close Button -->
+        <div class="close-menu-icon" onclick="toggleMobileMenu()">
+            <i class="fas fa-times"></i>
+        </div>
 
-<!-- Footer Section -->
-<footer>
-    <p>© Copyright Deki. All Rights Reserved - deki.lua</p>
-</footer>
+        <!-- Menu Items -->
+        <div class="mobile-menu-items">
+            <a href="#home" class="mobile-menu-item" onclick="toggleMobileMenu()">Home</a>
+            <a href="#skills" class="mobile-menu-item" onclick="toggleMobileMenu()">Skills</a>
+            <a href="#projects" class="mobile-menu-item" onclick="toggleMobileMenu()">Projects</a>
+            <a href="#feedback" class="mobile-menu-item" onclick="toggleMobileMenu()">Feedback</a>
+            <a href="#contact" class="mobile-menu-item" onclick="toggleMobileMenu()">Contact</a>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© Copyright Deki. All Rights Reserved - deki.lua</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
