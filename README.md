@@ -6,7 +6,7 @@ Hi there! I'm **Deki**, a passionate developer dedicated to crafting innovative 
 
 - 🎮 **Fivem Developer** 
 - 🐍 **Python Enthusiast** 
-- 🌐 **Node.js Ninja**
+- 🌐 **Website Developer**
 - 🤖 **Discord Bot Maker**
 
 ## Let's Connect 🌟
